@@ -1,0 +1,825 @@
+# depslib dependency file v1.0
+1697834375 source:c:\users\karti\desktop\studies\cg\proj_2\exercise\main.cpp
+	<GL/glut.h>
+	<GL/gl.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtx/string_cast.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<stdlib.h>
+	<iostream>
+
+1426327440 c:\mingw\include\gl\glut.h
+	"freeglut_std.h"
+
+1437534942 c:\mingw\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1512591001 c:\mingw\include\windows.h
+	<winresrc.h>
+	<stdarg.h>
+	<windef.h>
+	<wincon.h>
+	<winbase.h>
+	<wingdi.h>
+	<winuser.h>
+	<winnls.h>
+	<winver.h>
+	<winnetwk.h>
+	<winreg.h>
+	<winsvc.h>
+	<cderr.h>
+	<dde.h>
+	<ddeml.h>
+	<dlgs.h>
+	<imm.h>
+	<lzexpand.h>
+	<mmsystem.h>
+	<nb30.h>
+	<rpc.h>
+	<shellapi.h>
+	<winperf.h>
+	<commdlg.h>
+	<winspool.h>
+	"_winsock.h"
+	<ole2.h>
+
+1512591001 c:\mingw\include\winresrc.h
+	<winuser.h>
+	<winnt.h>
+	<winver.h>
+	<dde.h>
+	<dlgs.h>
+	<commctrl.h>
+
+1512591001 c:\mingw\include\winuser.h
+	<windef.h>
+	<wingdi.h>
+	<stdarg.h>
+	<dbt.h>
+
+1512591001 c:\mingw\include\windef.h
+	<w32api.h>
+	<winnt.h>
+
+1512591001 c:\mingw\include\w32api.h
+	<sdkddkver.h>
+
+1512591001 c:\mingw\include\sdkddkver.h
+
+1512591001 c:\mingw\include\winnt.h
+	<windef.h>
+	<winerror.h>
+	<string.h>
+	<basetsd.h>
+	<pshpack4.h>
+	<poppack.h>
+
+1512591001 c:\mingw\include\winerror.h
+
+1512590989 c:\mingw\include\string.h
+	<_mingw.h>
+	<stddef.h>
+	<strings.h>
+	"strings.h"
+	"wchar.h"
+
+1512590989 c:\mingw\include\_mingw.h
+	<msvcrtver.h>
+	<w32api.h>
+
+1512590989 c:\mingw\include\msvcrtver.h
+	<_mingw.h>
+
+1512590989 c:\mingw\include\strings.h
+	<_mingw.h>
+	<stddef.h>
+
+1512590989 c:\mingw\include\wchar.h
+	<_mingw.h>
+	<wctype.h>
+	<sys/types.h>
+	"stdio.h"
+	"stdlib.h"
+	"direct.h"
+	"sys/stat.h"
+	"io.h"
+	"time.h"
+	"locale.h"
+	"process.h"
+
+1512590989 c:\mingw\include\wctype.h
+	<_mingw.h>
+	<stddef.h>
+
+1512590989 c:\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
+
+1512590989 c:\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	"sys/types.h"
+	"stdarg.h"
+	<locale.h>
+
+1512590989 c:\mingw\include\locale.h
+	<_mingw.h>
+	<stddef.h>
+
+1512590989 c:\mingw\include\stdlib.h
+	<_mingw.h>
+	<stddef.h>
+	<locale.h>
+
+1512590989 c:\mingw\include\direct.h
+	"dos.h"
+
+1512590989 c:\mingw\include\dos.h
+	"io.h"
+
+1512590989 c:\mingw\include\io.h
+	<_mingw.h>
+	<sys/types.h>
+	"stdint.h"
+
+1512590989 c:\mingw\include\stdint.h
+	<_mingw.h>
+	<stddef.h>
+
+1512590989 c:\mingw\include\sys\stat.h
+	<sys/types.h>
+
+1512590989 c:\mingw\include\time.h
+	<sys/types.h>
+	<_mingw.h>
+	<stddef.h>
+
+1512590989 c:\mingw\include\process.h
+	<_mingw.h>
+	<sys/types.h>
+	"stdint.h"
+
+1512591001 c:\mingw\include\basetsd.h
+
+1512591001 c:\mingw\include\pshpack4.h
+
+1512591001 c:\mingw\include\poppack.h
+
+1512591001 c:\mingw\include\wingdi.h
+	<windef.h>
+
+1512591001 c:\mingw\include\dbt.h
+	<windef.h>
+
+1512591001 c:\mingw\include\winver.h
+
+1512591001 c:\mingw\include\dde.h
+
+1512591001 c:\mingw\include\dlgs.h
+
+1512591001 c:\mingw\include\commctrl.h
+	<prsht.h>
+
+1512591001 c:\mingw\include\prsht.h
+
+1512591001 c:\mingw\include\wincon.h
+
+1512591001 c:\mingw\include\winbase.h
+	<stdarg.h>
+	<windef.h>
+
+1512591001 c:\mingw\include\winnls.h
+
+1512591001 c:\mingw\include\winnetwk.h
+
+1512591001 c:\mingw\include\winreg.h
+
+1512591001 c:\mingw\include\winsvc.h
+
+1512591001 c:\mingw\include\cderr.h
+
+1512591001 c:\mingw\include\ddeml.h
+
+1512591001 c:\mingw\include\imm.h
+
+1512591001 c:\mingw\include\lzexpand.h
+
+1512591001 c:\mingw\include\mmsystem.h
+
+1512591001 c:\mingw\include\nb30.h
+
+1512591001 c:\mingw\include\rpc.h
+	<windows.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcnterr.h>
+	<winerror.h>
+	<excpt.h>
+
+1512591001 c:\mingw\include\rpcdce.h
+	<basetyps.h>
+	<rpcdcep.h>
+
+1512591001 c:\mingw\include\basetyps.h
+
+1512591001 c:\mingw\include\rpcdcep.h
+
+1512591001 c:\mingw\include\rpcnsi.h
+
+1512591001 c:\mingw\include\rpcnterr.h
+
+1512590989 c:\mingw\include\excpt.h
+	<_mingw.h>
+	<windef.h>
+
+1512591001 c:\mingw\include\shellapi.h
+	<pshpack2.h>
+	<poppack.h>
+
+1512591001 c:\mingw\include\pshpack2.h
+
+1512591001 c:\mingw\include\winperf.h
+
+1512591001 c:\mingw\include\commdlg.h
+	<unknwn.h>
+	<prsht.h>
+
+1512591001 c:\mingw\include\unknwn.h
+	<windows.h>
+	<objfwd.h>
+	<wtypes.h>
+
+1512591001 c:\mingw\include\objfwd.h
+	<basetyps.h>
+
+1512591001 c:\mingw\include\wtypes.h
+	<rpc.h>
+	<rpcndr.h>
+
+1512591001 c:\mingw\include\rpcndr.h
+	<rpcnsip.h>
+	<objfwd.h>
+
+1512591001 c:\mingw\include\rpcnsip.h
+
+1512591001 c:\mingw\include\winspool.h
+
+1512591001 c:\mingw\include\_winsock.h
+	<sdkddkver.h>
+	<winsock2.h>
+	<winsock.h>
+
+1512591001 c:\mingw\include\winsock2.h
+	"winsock.h"
+	"nspapi.h"
+
+1512591001 c:\mingw\include\winsock.h
+	<windows.h>
+	<winerror.h>
+	<sys/bsdtypes.h>
+	<sys/time.h>
+	<mswsock.h>
+
+1512590989 c:\mingw\include\sys\bsdtypes.h
+	<_mingw.h>
+
+1512590989 c:\mingw\include\sys\time.h
+	<time.h>
+
+1512591001 c:\mingw\include\mswsock.h
+
+1512591001 c:\mingw\include\nspapi.h
+	"_winsock.h"
+	"wtypes.h"
+
+1512591001 c:\mingw\include\ole2.h
+	<winerror.h>
+	<objbase.h>
+	<olectlid.h>
+	<oleauto.h>
+	<oleidl.h>
+
+1512591001 c:\mingw\include\objbase.h
+	<rpc.h>
+	<rpcndr.h>
+	<stdlib.h>
+	<basetyps.h>
+	<wtypes.h>
+	<unknwn.h>
+	<objidl.h>
+	<cguid.h>
+
+1512591001 c:\mingw\include\objidl.h
+	<objfwd.h>
+
+1512591001 c:\mingw\include\cguid.h
+
+1512591001 c:\mingw\include\olectlid.h
+
+1512591001 c:\mingw\include\oleauto.h
+	<oaidl.h>
+
+1512591001 c:\mingw\include\oaidl.h
+	<windows.h>
+	<ole2.h>
+
+1512591001 c:\mingw\include\oleidl.h
+	<objfwd.h>
+
+1512591001 c:\mingw\include\gl\gl.h
+
+1512591001 c:\mingw\include\gl\glu.h
+	<stddef.h>
+	<GL/gl.h>
+
+1420280585 c:\mingw\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1420280585 c:\mingw\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1420280585 c:\mingw\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1420280585 c:\mingw\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1424013748 c:\mingw\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1420280585 c:\mingw\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1420280585 c:\mingw\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1420280585 c:\mingw\include\glm\detail\precision.hpp
+
+1420280585 c:\mingw\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1420280585 c:\mingw\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1420280585 c:\mingw\include\glm\detail\_swizzle.hpp
+
+1420280585 c:\mingw\include\glm\detail\_swizzle_func.hpp
+
+1424001528 c:\mingw\include\glm\detail\type_vec2.inl
+
+1420280585 c:\mingw\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_vec3.inl
+
+1420280585 c:\mingw\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1420280585 c:\mingw\include\glm\detail\type_vec4_sse2.inl
+
+1420280585 c:\mingw\include\glm\detail\type_vec4_avx.inl
+
+1420280585 c:\mingw\include\glm\detail\type_vec4_avx2.inl
+
+1420280585 c:\mingw\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat2x2.inl
+
+1420280585 c:\mingw\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat2x3.inl
+
+1420280585 c:\mingw\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat2x4.inl
+
+1420280585 c:\mingw\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat3x2.inl
+
+1420280585 c:\mingw\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat3x3.inl
+
+1420280585 c:\mingw\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat3x4.inl
+
+1420280585 c:\mingw\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat4x2.inl
+
+1420280585 c:\mingw\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat4x3.inl
+
+1420280585 c:\mingw\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_mat4x4.inl
+
+1420280585 c:\mingw\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1420280585 c:\mingw\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1420280585 c:\mingw\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1420280585 c:\mingw\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1424001528 c:\mingw\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1424001528 c:\mingw\include\glm\detail\type_vec1.inl
+
+1420280585 c:\mingw\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1420280585 c:\mingw\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1420280585 c:\mingw\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1420280585 c:\mingw\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1420280585 c:\mingw\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1420280585 c:\mingw\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1420280585 c:\mingw\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1423994623 c:\mingw\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1420280585 c:\mingw\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1423516826 c:\mingw\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1423516826 c:\mingw\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1420280585 c:\mingw\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1420280585 c:\mingw\include\glm\detail\type_half.inl
+
+1420280585 c:\mingw\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1420280585 c:\mingw\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1420280585 c:\mingw\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1420280585 c:\mingw\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1420280585 c:\mingw\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1420280585 c:\mingw\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1420280585 c:\mingw\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1420280585 c:\mingw\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1420280585 c:\mingw\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1420280585 c:\mingw\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1420280585 c:\mingw\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1420280585 c:\mingw\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1420280585 c:\mingw\include\glm\gtc\constants.inl
+	<limits>
+
+1420829383 c:\mingw\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1420280585 c:\mingw\include\glm\gtx\string_cast.hpp
+	"../glm.hpp"
+	"../gtc/type_precision.hpp"
+	<string>
+	"string_cast.inl"
+
+1420280585 c:\mingw\include\glm\gtc\type_precision.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"type_precision.inl"
+
+1424001528 c:\mingw\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1424001528 c:\mingw\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1420280585 c:\mingw\include\glm\gtc\vec1.hpp
+	"../glm.hpp"
+	"../detail/type_vec1.hpp"
+	"vec1.inl"
+
+1420280585 c:\mingw\include\glm\gtc\vec1.inl
+
+1420280585 c:\mingw\include\glm\gtc\type_precision.inl
+
+1420829641 c:\mingw\include\glm\gtx\string_cast.inl
+	<cstdarg>
+	<cstdio>
+
+1420280585 c:\mingw\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1420280585 c:\mingw\include\glm\gtc\type_ptr.inl
+	<cstring>
+
