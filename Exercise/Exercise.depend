@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1697834375 source:c:\users\karti\desktop\studies\cg\proj_2\exercise\main.cpp
+1697921735 source:c:\users\karti\desktop\studies\cg\proj_2\exercise\main.cpp
 	<GL/glut.h>
 	<GL/gl.h>
 	<glm/glm.hpp>
