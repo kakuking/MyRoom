@@ -44,7 +44,6 @@ void initCam()
     glLoadMatrixf(glm::value_ptr(viewMatrix));
 }
 
-
 void updateView()
 {
     glm::vec3 n = glm::normalize(cameraPos - cameraTarget);
@@ -76,8 +75,9 @@ void updateView()
 }
 
 // Takes bottom-left-front vertex and top-right-back vertex and draws a cuboid
+// normal = 1 is outward normals, normal = -1 is inwards
 void drawCuboid(float x1, float y1, float z1, float x2, float y2, float z2, int normal)
-{   // normal = 1 is outward normals, normal = -1 is inwards
+{
     glBegin(GL_QUADS);
 
         //Front Face
@@ -124,6 +124,72 @@ void drawCuboid(float x1, float y1, float z1, float x2, float y2, float z2, int 
     glEnd();
 }
 
+
+void drawRoom(float x1, float y1, float z1, float x2, float y2, float z2)
+{
+    int normal = -1;
+    float xOffset = -10;
+    float yOffset = -10;
+    float zOffset = 0;
+
+    glBegin(GL_QUADS);
+
+        //Front Face
+        if(cameraPos.z < z1 + zOffset){
+            glNormal3f(0.0, 0.0, normal*1.0);
+            glVertex3f(x1, y1, z1);
+            glVertex3f(x2, y1, z1);
+            glVertex3f(x2, y2, z1);
+            glVertex3f(x1, y2, z1);
+        }
+
+        // Right Face
+        if(cameraPos.x < x2 + xOffset){
+            glNormal3f(normal*1.0, 0.0, 0.0);
+            glVertex3f(x2, y1, z1);
+            glVertex3f(x2, y1, z2);
+            glVertex3f(x2, y2, z2);
+            glVertex3f(x2, y2, z1);
+        }
+
+        // Back Face
+        if(cameraPos.z > z2 + zOffset){
+            glNormal3f(0.0, 0.0, normal*-1.0);
+            glVertex3f(x1, y1, z2);
+            glVertex3f(x2, y1, z2);
+            glVertex3f(x2, y2, z2);
+            glVertex3f(x1, y2, z2);
+        }
+
+        // Left Face
+        if(cameraPos.x > x1 + xOffset){
+            glNormal3f(normal*-1.0, 0.0, 0.0);
+            glVertex3f(x1, y1, z1);
+            glVertex3f(x1, y1, z2);
+            glVertex3f(x1, y2, z2);
+            glVertex3f(x1, y2, z1);
+        }
+
+        // Bottom Face
+        if(cameraPos.y > y1 + yOffset){
+            glNormal3f(0.0, normal*-1.0, 0.0);
+            glVertex3f(x1, y1, z1);
+            glVertex3f(x2, y1, z1);
+            glVertex3f(x2, y1, z2);
+            glVertex3f(x1, y1, z2);
+        }
+
+        // Top Face
+        if(cameraPos.y < y2 + yOffset){
+            glNormal3f(0.0, normal*1.0, 0.0);
+            glVertex3f(x1, y2, z1);
+            glVertex3f(x2, y2, z1);
+            glVertex3f(x2, y2, z2);
+            glVertex3f(x1, y2, z2);
+        }
+    glEnd();
+}
+
 static void resize(int width, int height)
 {
     const float ar = (float) width / (float) height;
@@ -159,8 +225,44 @@ static void display(void)
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    setColorRGB(244, 247, 208);
-    drawCuboid(-10.0, 0.0, 3.0, 10.0, 10.0, -10.0, -1);
+    // We translate so that all coordinates are easier to keep track of, bottom left corner of room is 0, 0, 0 and top right is 20, 15, -20
+    glPushMatrix();
+        glTranslatef(-10, -10, 0);
+
+        // Draw the room
+        setColorRGB(244, 247, 208);
+        drawRoom(0.0, 0, 0, 25.0, 30.0, -30.0);
+
+        // Draw the bed
+        setColorRGB(112, 65, 0);
+        drawCuboid(0.0, 5.0, -5.0, 12, 5.5, -24.5, 1);  //  Platform
+
+        setColorRGB(122, 122, 122);
+        drawCuboid(0.5, 0, -5.5, 1, 5, -6, 1);          // The legs
+        drawCuboid(11, 0, -5.5, 11.5, 5, -6, 1);
+        drawCuboid(0, 0, -24.5, 12, 8.5, -25, 1);       // The backboard
+
+        // Next, the table
+        setColorRGB(255, 203, 143);
+        drawCuboid(17, 9, -10, 25, 9.5, -20, 1);        // Platform
+
+        setColorRGB(194, 194, 194);
+        drawCuboid(17.5, 0, -10.5, 18, 9, -11, 1);      // The legs
+        drawCuboid(24, 0, -10.5, 24.5, 9, -11, 1);
+        drawCuboid(24, 0, -19, 24.5, 9, -19.5, 1);
+        drawCuboid(17.5, 0, -19, 18, 9, -19.5, 1);
+
+
+        // The window
+        setColorRGB(79, 79, 79);
+        drawCuboid(15, 10, -29.9, 25, 21, -30.3, 1); // The window frame
+        drawCuboid(20, 10, -29.84, 20.5, 21, -30.36, 1); // Slat in the middle
+
+        setColorRGB(181, 255, 240);
+        drawCuboid(15.3, 10.3, -29.85, 24.7, 20.7, -30.35, 1);
+
+
+    glPopMatrix();
 
     glFlush();
     glutSwapBuffers();
