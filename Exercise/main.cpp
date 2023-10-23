@@ -8,8 +8,6 @@
 #include <stdlib.h>
 #include <iostream>
 
-static int slices = 16;
-static int stacks = 16;
 
 glm::vec3 initialCameraPos(0.0f, 0.0f, 3.0f);      // Initial pos
 glm::vec3 initialCameraTarget(0.0f, 0.0f, 0.0f);   // Initial target
@@ -44,6 +42,8 @@ void initCam()
     glLoadMatrixf(glm::value_ptr(viewMatrix));
 }
 
+// Takes increment in yawAngle, pitchAngle, and rollAngle and then calculates new position of camera
+// Calls lookAt()
 void updateView()
 {
     glm::vec3 n = glm::normalize(cameraPos - cameraTarget);
@@ -67,11 +67,10 @@ void updateView()
     glMatrixMode(GL_MODELVIEW);
     glLoadMatrixf(glm::value_ptr(viewMatrix));
 
+    // Resets angles so that angles dont add up
     yawAngle = 0.0f;
     pitchAngle = 0.0f;
     rollAngle = 0.0f;
-
-    //std::cout << "n - " << glm::to_string(n) << " u - " << glm::to_string(u) << " v - " << glm::to_string(v) << "\n";
 }
 
 // Takes bottom-left-front vertex and top-right-back vertex and draws a cuboid
@@ -125,6 +124,8 @@ void drawCuboid(float x1, float y1, float z1, float x2, float y2, float z2, int 
 }
 
 
+// Draws the room, a modified drawCuboid where a wall is not rendered if it obstructs view
+// of camera into the room
 void drawRoom(float x1, float y1, float z1, float x2, float y2, float z2)
 {
     int normal = -1;
@@ -197,22 +198,14 @@ static void resize(int width, int height)
     glViewport(0, 0, width, height);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glFrustum(-ar, ar, -1.0, 1.0, 2.0, 100.0);
-
-    glm::dvec3 cameraPosD(cameraPos.x, cameraPos.y, cameraPos.z);
-    glm::dvec3 cameraTargetD(cameraTarget.x, cameraTarget.y, cameraTarget.z);
-    glm::dvec3 upVectorD(upVector.x, upVector.y, upVector.z);
-
-    gluLookAt(
-        cameraPosD.x, cameraPosD.y, cameraPosD.z,
-        cameraTargetD.x, cameraTargetD.y, cameraTargetD.z,
-        upVectorD.x, upVectorD.y, upVectorD.z
-    );
+    glFrustum(-ar, ar, -1.0, 1.0, 2.0, 100.0);  // For Perspective
+    //glOrtho(-20, 20, -20, 30, 0, 100);        // For parallel
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity() ;
 }
 
+// Takes rgb [0-255, 3] and calls glColor3f with it
 void setColorRGB(int R, int G, int B)
 {
     glColor3f(R/255.0, G/255.0, B/255.0);
@@ -261,6 +254,36 @@ static void display(void)
         setColorRGB(181, 255, 240);
         drawCuboid(15.3, 10.3, -29.85, 24.7, 20.7, -30.35, 1);
 
+        // The whiteboard
+        setColorRGB(224, 224, 224);
+        drawCuboid(24.8, 13, -10, 25, 22, -20, 1);  // The background
+
+        setColorRGB(250, 250, 250);
+        drawCuboid(24.78, 13.3, -10.3, 24.99, 21.7, -19.7, 1); // The board itself
+
+        // The cupboard
+        setColorRGB(41, 24, 0); // For the dark insides
+        drawCuboid(1, 0.3, -29.9, 8, 21.7, -31.9, 1);
+
+        setColorRGB(255, 191, 99); // The frame
+        drawCuboid(0.5, 0, -29.95, 8.5, 22, -32, 1);
+        drawCuboid(0.5, 0, -29.7, 4.5, 22, -29.95, 1);
+
+        // For the door that is ajar
+        glPushMatrix();
+            glTranslatef(9, 0, -29.95);
+            glRotatef(30, 0, 1, 0);
+            glTranslatef(-9, 0, 29.95);
+            drawCuboid(4.5, 0, -29.7, 9, 22, -29.95, 1);
+        glPopMatrix();
+
+        // door
+        glPushMatrix();
+            glTranslatef(24.6, 0, -0.1);
+            glRotatef(-10, 0, 1, 0);
+            glTranslatef(-24.6, 0, 0.1);
+            drawCuboid(16.9, 0, 0.1, 24.6, 22, -0.1, 1);
+        glPopMatrix();
 
     glPopMatrix();
 
@@ -357,6 +380,7 @@ static void key(unsigned char key, int x, int y)
             //updateView();
             break;
 
+        // Yaw Angle
         case '1':
             yawAngle = rotateSpeed;
             updateView();
@@ -366,6 +390,7 @@ static void key(unsigned char key, int x, int y)
             updateView();
             break;
 
+        // Pitch rotation
         case '2':
             pitchAngle = rotateSpeed;
             updateView();
@@ -375,6 +400,7 @@ static void key(unsigned char key, int x, int y)
             updateView();
             break;
 
+        // Roll Rotation
         case '3':
             rollAngle = rotateSpeed;
             updateView();
@@ -384,6 +410,7 @@ static void key(unsigned char key, int x, int y)
             updateView();
             break;
 
+        // Resets camera
         case 'r':
             initCam();
             break;
@@ -426,8 +453,6 @@ int main(int argc, char *argv[])
     glutIdleFunc(idle);
 
     glClearColor(1,1,1,1);
-    //glEnable(GL_CULL_FACE);
-    //glCullFace(GL_BACK);
 
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LEQUAL);
